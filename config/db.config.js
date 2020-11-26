@@ -1,13 +1,13 @@
-'use strict';
-const mysql = require('mysql');
+"use strict";
+const mysql = require("mysql");
 //local mysql db connection
 const dbConn = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '',
-  database : 'ecommerce'
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "ecommerce",
 });
-dbConn.connect(function(err) {
+dbConn.connect(function (err) {
   if (err) throw err;
   console.log("Database Connected!");
 });
